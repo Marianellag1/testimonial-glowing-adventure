@@ -1,0 +1,155 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    margin: 0;
+}
+
+:root {
+    --violet: hsl(263, 55%, 52%);
+    --grayish: hsl(217, 19%, 35%);
+    --blackish: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --gray: hsl(0, 0%, 81%);
+    --blue: hsl(210, 46%, 95%);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    background-color: var(--blue);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.box {
+    border-radius: 7px;
+    padding: 2rem;
+    height: fit-content;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+}
+
+h1,
+h2 {
+    font-size: 13px;
+    padding-left: 1rem;
+    font-weight: 500;
+}
+
+.one {
+    background-image: url(../../images/bg-pattern-quotation.svg);
+    background-color: var(--violet);
+    grid-column: 1 / span 2;
+}
+
+.one h1,
+.two h1,
+.four h1 {
+    color: var(--white);
+}
+
+.one h2,
+.two h2,
+.four h2 {
+    color: var(--white);
+    opacity: 50%;
+}
+
+.three h1,
+.five h1 {
+    color: var(--grayish);
+}
+
+.three h2,
+.five h2 {
+    color: var(--grayish);
+    opacity: 50%;
+}
+
+.two {
+    background-color: var(--grayish);
+}
+
+.three {
+    background-color: var(--white);
+    grid-column: 1;
+}
+
+.four {
+    background-color: var(--blackish);
+    grid-column: 2 / span 2;
+}
+
+.five {
+    background-color: var(--white);
+}
+
+img {
+    border-radius: 50%;
+    max-width: 6%;
+}
+
+.first {
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+}
+
+#big {
+    padding-bottom: 1rem;
+    font-weight: 700;
+    font-size: large;
+}
+
+aside {
+    width: 50%;
+}
+
+.one #big,
+.two #big,
+.four #big {
+    color: var(--white);
+}
+
+.one #quote,
+.two #quote,
+.four #quote {
+    color: var(--white);
+    opacity: 70%;
+}
+
+.three #big,
+.five #big {
+    color: var(--grayish);
+}
+
+.three #quote,
+.five #quote {
+    color: var(--grayish);
+    opacity: 70%;
+}
