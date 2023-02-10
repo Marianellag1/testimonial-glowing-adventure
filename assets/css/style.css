@@ -135,38 +135,38 @@ img {
     flex-direction: column;
 }
 
-#big {
+h3 {
     padding-bottom: 1rem;
     font-weight: 700;
     font-size: large;
 }
 
-.one #big,
-.two #big,
-.four #big {
+.one h3,
+.two h3,
+.four h3 {
     color: var(--white);
 }
 
-.one #quote,
-.two #quote,
-.four #quote {
+.one p,
+.two p,
+.four p {
     color: var(--white);
     opacity: 70%;
 }
 
-.three #big,
-.five #big {
+.three h3,
+.five h3 {
     color: var(--grayish);
 }
 
-.three #quote,
-.five #quote {
+.three p,
+.five p {
     color: var(--grayish);
     opacity: 70%;
 }
 
-.five #quote,
-.two #quote,
-.three #quote {
+.five p,
+.two p,
+.three p {
     font: 500 13px/24px 'Barlow Semi Condensed', sans-serif;
 }
